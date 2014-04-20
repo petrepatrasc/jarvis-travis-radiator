@@ -5,6 +5,16 @@
     Dashboard
 {% endblock %}
 
+{% block javascripts %}
+    <script type="text/JavaScript">
+        function autoRefresh() {
+            setTimeout("location.reload(true);", 120 * 1000);
+        }
+
+        autoRefresh();
+    </script>
+{% endblock %}
+
 {% block body %}
     <div class="row">
         <h1 class="col-lg-12 text-center jarvis-title">Jarvis Dashboard</h1>
