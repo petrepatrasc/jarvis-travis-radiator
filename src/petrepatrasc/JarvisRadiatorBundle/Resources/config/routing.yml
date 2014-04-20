@@ -1,3 +1,7 @@
-jarvis_radiator_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: JarvisRadiatorBundle:Default:index }
+jarvis_home:
+    pattern: /
+    defaults: { _controller: JarvisRadiatorBundle:Dashboard:index }
+
+jarvis_dashboard:
+    pattern: /dashboard
+    defaults: { _controller: JarvisRadiatorBundle:Dashboard:index }

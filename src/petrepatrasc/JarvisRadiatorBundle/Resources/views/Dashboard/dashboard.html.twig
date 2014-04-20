@@ -1,0 +1,9 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <h1>Repository Overview</h1>
+
+    {% for repository in repositories %}
+        {{ include ('JarvisRadiatorBundle:Dashboard:entry.html.twig', { 'repository': repository }) }}
+    {% endfor %}
+{% endblock %}
