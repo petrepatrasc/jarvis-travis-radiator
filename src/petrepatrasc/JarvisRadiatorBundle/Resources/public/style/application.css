@@ -1,10 +1,10 @@
 body {
-    background-color: #176785;
+    background-color: #28497f;
 }
 
 #jarvis-wrapper {
     color: #fff;
-    background-color: #176785;
+    background-color: #28497f;
     font-size: 16px;
     text-shadow: 1px 1px 1px #333;
 }
@@ -12,4 +12,8 @@ body {
 .jarvis-title {
     font-size: 350%;
     margin-bottom: 1em;
+}
+
+.jarvis-logo {
+    height: 80px;
 }
