@@ -1,0 +1,7 @@
+parameters:
+#    jarvis_radiator.example.class: petrepatrasc\JarvisRadiatorBundle\Example
+
+services:
+#    jarvis_radiator.example:
+#        class: %jarvis_radiator.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

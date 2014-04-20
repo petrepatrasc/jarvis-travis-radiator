@@ -1,0 +1,4 @@
+jarvis_radiator:
+    resource: "@JarvisRadiatorBundle/Resources/config/routing.yml"
+    prefix:   /
+

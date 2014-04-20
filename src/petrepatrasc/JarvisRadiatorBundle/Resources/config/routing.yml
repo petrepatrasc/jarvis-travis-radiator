@@ -1,0 +1,3 @@
+jarvis_radiator_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: JarvisRadiatorBundle:Default:index }
