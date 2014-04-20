@@ -35,8 +35,20 @@
 
 /* COLOUR CODES FOR BUILD RESULT */
 
+@keyframes glowing {
+    0% {
+        background-color: #974c25;
+    }
+    50% {
+        background-color: #F47026;
+    }
+    100% {
+        background-color: #974c25;
+    }
+}
+
 .repository-result- {
-    background-color: #7D7050;
+    animation: glowing 1500ms infinite;
 }
 
 .repository-result-0 {
@@ -44,5 +56,5 @@
 }
 
 .repository-result-1 {
-    background-color: #FF534E;
+    background-color: #c44d48;
 }

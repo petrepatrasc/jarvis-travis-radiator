@@ -12,14 +12,14 @@ class DashboardController extends Controller
     {
         $repositoryInformation = array();
         $repositories = array(
-            'petrepatrasc/starcraft-connection-layer',
+            'petrepatrasc/ScrumManagerWeb',
             'petrepatrasc/blizzard-starcraft-api',
             'scnakandala/sep_2013',
             'globesoft/dam-o-sansa-viitorului',
             'apache/sling',
             'globesoft/scrum-manager-web',
             'crm-stars/stars-poc',
-            'petrepatrasc/ScrumManagerWeb'
+            'petrepatrasc/starcraft-connection-layer',
         );
 
         foreach ($repositories as $repository) {
