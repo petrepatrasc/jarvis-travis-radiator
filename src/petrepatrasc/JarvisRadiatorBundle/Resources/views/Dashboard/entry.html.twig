@@ -1,7 +1,18 @@
 {% block repository %}
-    <div class="repository">
-        <h2 class="repository-title">{{ repository.slug }}</h2>
+    <div class="repository col-lg-12 repository-result-{{ repository.builds[repository.lastBuildId].result }}">
+        <div class="repository-meta col-lg-4">
+            <h2 class="repository-title">{{ repository.slug }}</h2>
+            <div class="repository-commit-message">{{ repository.builds[repository.lastBuildId].message }}</div>
+        </div>
 
-        <div class="repository-description">{{ repository.description }}</div>
+        <div class="repository-build col-lg-4">
+            <h2 class="repository-build-number">Latest build: {{ repository.lastBuildNumber }}</h2>
+            <div class="repository-build-branch">Branch: {{ repository.builds[repository.lastBuildId].branch }}</div>
+        </div>
+
+        <div class="repository-build-time col-lg-4">
+            <h2 class="repository-build-time">{{ repository.builds[repository.lastBuildId].finishedAt | date('H:i:s d-M-Y') }}</h2>
+            <div class="repository-build-duration">Build duration: {{ repository.builds[repository.lastBuildId].duration }} secs</div>
+        </div>
     </div>
 {% endblock %}

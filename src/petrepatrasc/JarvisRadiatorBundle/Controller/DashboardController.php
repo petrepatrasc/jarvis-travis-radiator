@@ -13,14 +13,18 @@ class DashboardController extends Controller
         $repositoryInformation = array();
         $repositories = array(
             'petrepatrasc/starcraft-connection-layer',
-            'petrepatrasc/blizzard-starcraft-api'
+            'petrepatrasc/blizzard-starcraft-api',
+            'scnakandala/sep_2013',
+            'globesoft/dam-o-sansa-viitorului',
+            'apache/sling',
+            'globesoft/scrum-manager-web',
+            'crm-stars/stars-poc',
+            'petrepatrasc/ScrumManagerWeb'
         );
 
         foreach ($repositories as $repository) {
             $repositoryInformation[] = $this->get('jarvis.travis')->retrieveRepositoryInformationAndBuildStatus($repository);
         }
-
-        var_dump($repositoryInformation[0]);
 
         return $this->render('JarvisRadiatorBundle:Dashboard:dashboard.html.twig', array(
             'repositories' => $repositoryInformation

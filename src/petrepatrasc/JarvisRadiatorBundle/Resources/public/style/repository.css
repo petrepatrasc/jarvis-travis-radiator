@@ -1,0 +1,48 @@
+/* GENERAL STYLING RULES */
+
+.repository {
+    color: #fff;
+    border: 1px solid #EDEDED;
+    padding: 1em;
+}
+
+.repository h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* RESPONSIVE DESIGN FOR LISTING INTERFACE */
+
+@media (min-width: 1200px) {
+    .repository-build {
+        text-align: center;
+    }
+
+    .repository-build-time {
+        text-align: right;
+    }
+}
+
+@media (max-width: 1199px) {
+    .repository > .repository-meta {
+        margin-top: 2em;
+    }
+
+    .repository > div {
+        margin-bottom: 2em;
+    }
+}
+
+/* COLOUR CODES FOR BUILD RESULT */
+
+.repository-result- {
+    background-color: #7D7050;
+}
+
+.repository-result-0 {
+    background-color: #499989;
+}
+
+.repository-result-1 {
+    background-color: #FF534E;
+}

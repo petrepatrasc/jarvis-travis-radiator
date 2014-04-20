@@ -17,7 +17,6 @@ class TravisService {
     public function retrieveRepositoryInformationAndBuildStatus($repositoryName) {
         $repository = new Repository($repositoryName);
         $project = $this->client->fetchRepository($repository);
-
         return $project;
     }
 }

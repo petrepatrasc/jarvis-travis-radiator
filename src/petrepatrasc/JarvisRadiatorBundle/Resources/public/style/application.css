@@ -1,0 +1,15 @@
+body {
+    background-color: #176785;
+}
+
+#jarvis-wrapper {
+    color: #fff;
+    background-color: #176785;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px #333;
+}
+
+.jarvis-title {
+    font-size: 350%;
+    margin-bottom: 1em;
+}

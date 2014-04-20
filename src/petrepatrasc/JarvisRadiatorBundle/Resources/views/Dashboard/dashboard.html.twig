@@ -1,9 +1,18 @@
 {% extends '::base.html.twig' %}
 
+{% block title %}
+    {{ parent() }}
+    Dashboard
+{% endblock %}
+
 {% block body %}
-    <h1>Repository Overview</h1>
+    <div class="row">
+        <h1 class="col-lg-12 text-center jarvis-title">Jarvis Dashboard</h1>
+    </div>
 
     {% for repository in repositories %}
-        {{ include ('JarvisRadiatorBundle:Dashboard:entry.html.twig', { 'repository': repository }) }}
+        <div class="row">
+            {{ include ('JarvisRadiatorBundle:Dashboard:entry.html.twig', { 'repository': repository }) }}
+        </div>
     {% endfor %}
 {% endblock %}
