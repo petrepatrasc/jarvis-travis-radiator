@@ -11,16 +11,8 @@ class DashboardController extends Controller
     public function indexAction()
     {
         $repositoryInformation = array();
-        $repositories = array(
-            'petrepatrasc/ScrumManagerWeb',
-            'petrepatrasc/blizzard-starcraft-api',
-            'scnakandala/sep_2013',
-            'globesoft/dam-o-sansa-viitorului',
-            'apache/sling',
-            'globesoft/scrum-manager-web',
-            'crm-stars/stars-poc',
-            'petrepatrasc/starcraft-connection-layer',
-        );
+
+        $repositories = $this->container->getParameter('travis_repositories');
 
         foreach ($repositories as $repository) {
             $repositoryInformation[] = $this->get('jarvis.travis')->retrieveRepositoryInformationAndBuildStatus($repository);
